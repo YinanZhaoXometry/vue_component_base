@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <h3>Switch</h3>
-    <custom-switch></custom-switch>
+    <CustomSwitch/>
+    <h3>Tab</h3>
+    <CustomTab/>
   </div>
 </template>
 
 <script>
 import CustomSwitch from "./components/Switch";
+import CustomTab from "./components/Tab";
 
 export default {
   name: "App",
   components: {
-    CustomSwitch
+    CustomSwitch,
+    CustomTab
   }
 };
 </script>
@@ -24,5 +28,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+/* reset css */
+body {
+  margin: 0;
 }
 </style>
